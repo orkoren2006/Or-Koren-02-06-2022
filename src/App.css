@@ -1,3 +1,5 @@
+@import url('/src/assets/styles/base.css');
+@import url('/src/assets/styles/helpers.css');
 @import url('/src/assets/styles/icons.css');
 @import url('/src/assets/styles/forecast.css');
 @import url('/src/assets/styles/header.css');
@@ -7,70 +9,4 @@
 @font-face{
   font-family: roboto-Medium;
   src: url('/src/assets/fonts/roboto/Roboto-Medium.ttf')
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: roboto-medium;
-}
-
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.wrap {
-  flex-flow: wrap;
-}
-
-.center {
-  align-items: center;
-}
-
-.between {
-  justify-content: space-between;
-}
-
-.bright {
-  height: 100vh;
-  background-color: rgb(210, 227, 228);
-}
-
-.dark {
-  height: 100vh;
-  background-color: #282c34;
-  color: white;
-}
-
-
-.mainPage, .favorites {
-  text-align: center;
-  padding: 0 5vw;
-}
-
-.mainPage input[type=text] {
-  width:250px;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-  text-align: center;
-  font-size: 16px;
-  height: 40px;
-}
-
-.favoriteButton {
-  justify-content: center;
-  margin-top: 20px;
 }

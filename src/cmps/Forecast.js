@@ -26,7 +26,7 @@ function Forecast() {
             {(forecast.length > 0) && <div>
                 <div className='flex wrap forecast'>
                     {forecast.map((day, index) => {
-                        return <div className='flex column center' key={index} >
+                        return <div className='flex column center forecastCard' key={index} >
                             <div>{moment(day.Date).format('dddd')}</div>
                             <WeatherIcon icon={day.Day.Icon} iconSize='64'/>
                             {storeData.metric ?

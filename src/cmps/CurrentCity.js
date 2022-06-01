@@ -26,7 +26,7 @@ function CurrentCity() {
 
     return (
         <div>
-            <h1>{city.LocalizedName}</h1>
+            <h1 style={{marginBottom:'-20px'}}>{city.LocalizedName}</h1>
             <CurrentWeather current={current} iconSize={iconSize} textSize={textSize} />
         </div>
     );

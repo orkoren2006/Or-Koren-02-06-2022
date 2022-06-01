@@ -31,7 +31,7 @@ function FavoriteCity({ city }) {
     }
 
     return (
-        <div className='showFavorite' onClick={showCityForecast}>
+        <div className='favoriteCity' onClick={showCityForecast}>
             <h2>{city.LocalizedName}</h2>
             <CurrentWeather current={current} iconSize={iconSize} textSize={textSize}/>
         </div>
