@@ -1,0 +1,19 @@
+.forecast {
+    justify-content: space-between;  
+}
+
+.cities {
+    justify-content: space-evenly;
+}
+
+.current {
+    justify-content: center;
+}
+
+.city {
+    margin-bottom: 50px;
+}
+
+.showFavorite:hover {
+    cursor: pointer;
+}

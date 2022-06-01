@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('/src/assets/styles/icons.css');
+@import url('/src/assets/styles/forecast.css');
+@import url('/src/assets/styles/header.css');
+@import url('/src/assets/styles/list.css');
+@import url('/src//assets/styles/favorites.css');
+
+@font-face{
+  font-family: roboto-Medium;
+  src: url('/src/assets/fonts/roboto/Roboto-Medium.ttf')
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: roboto-medium;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flex {
   display: flex;
+}
+
+.column {
   flex-direction: column;
+}
+
+.wrap {
+  flex-flow: wrap;
+}
+
+.center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.bright {
+  height: 100vh;
+  background-color: rgb(210, 227, 228);
+}
+
+.dark {
+  height: 100vh;
+  background-color: #282c34;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.mainPage, .favorites {
+  text-align: center;
+  padding: 0 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainPage input[type=text] {
+  width:250px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  height: 40px;
+}
+
+.favoriteButton {
+  justify-content: center;
+  margin-top: 20px;
 }

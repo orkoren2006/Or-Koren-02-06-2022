@@ -1,0 +1,139 @@
+.day {
+  background-image: url('/src/assets/icons/day.svg');
+}
+
+.night {
+  background-image: url('/src/assets/icons/night.svg');
+}
+
+.thunder {
+  background-image: url('/src/assets/icons/thunder.svg');
+
+}
+
+.cloudy {
+  background-image: url('/src/assets/icons/cloudy.svg');
+}
+
+.weather {
+  background-image: url('/src/assets/icons/weather.svg');
+}
+
+.cloudy-day-1 {
+  background-image: url('/src/assets/icons/cloudy-day-1.svg');
+}
+
+.cloudy-day-2 {
+  background-image: url('/src/assets/icons/cloudy-day-2.svg');
+}
+
+.cloudy-day-3 {
+  background-image: url('/src/assets/icons/cloudy-day-3.svg');
+}
+
+.cloudy-night-1 {
+  background-image: url('/src/assets/icons/cloudy-night-1.svg');
+}
+
+.cloudy-night-2 {
+  background-image: url('/src/assets/icons/cloudy-night-2.svg');
+}
+
+.cloudy-night-3 {
+  background-image: url('/src/assets/icons/cloudy-night-3.svg');
+}
+
+.rainy-1 {
+  background-image: url('/src/assets/icons/rainy-1.svg');
+}
+
+.rainy-2 {
+  background-image: url('/src/assets/icons/rainy-2.svg');
+}
+
+.rainy-3 {
+  background-image: url('/src/assets/icons/rainy-3.svg');
+}
+
+.rainy-4 {
+  background-image: url('/src/assets/icons/rainy-4.svg');
+}
+
+.rainy-5 {
+  background-image: url('/src/assets/icons/rainy-5.svg');
+}
+
+.rainy-6 {
+  background-image: url('/src/assets/icons/rainy-6.svg');
+}
+
+.rainy-7 {
+  background-image: url('/src/assets/icons/rainy-7.svg');
+}
+
+.snowy-2 {
+  background-image: url('/src/assets/icons/snowy-2.svg');
+}
+
+.snowy-4 {
+  background-image: url('/src/assets/icons/snowy-4.svg');
+}
+
+.snowy-5 {
+  background-image: url('/src/assets/icons/snowy-5.svg');
+}
+
+
+.snowy-6 {
+  background-image: url('/src/assets/icons/snowy-6.svg');
+}
+
+.star {
+  background-image: url('/src/assets/icons/icons8-star-48.png');
+}
+
+.starFilled {
+  background-image: url('/src/assets/icons/icons8-star-48-filled.png');
+}
+
+.celsius {
+  background-image: url('/src/assets/icons/celsius.png');
+}
+
+.fahrenheit {
+  background-image: url('/src/assets/icons/fahrenheit.png');
+}
+
+.size-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.size-32 {
+  width: 32px;
+  height: 32px;
+}
+
+
+.size-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.size-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.size-150 {
+  width: 150px;
+  height: 150px;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.sad {
+  background-image: url('/src/assets/icons/sad.png');
+}

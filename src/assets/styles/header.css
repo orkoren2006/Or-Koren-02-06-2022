@@ -1,0 +1,25 @@
+.header {
+    padding: 2vh 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 36px;
+    color: #f68422
+}
+
+.fahrenheit:hover {
+    cursor: pointer;
+} 
+
+.celsius:hover {
+    cursor: pointer;
+}
+
+.headerButtons {
+    width: 20vw;
+    justify-content: space-around;
+    align-items: center;
+}
