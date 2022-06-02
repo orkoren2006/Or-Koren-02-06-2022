@@ -47,16 +47,14 @@ function Header() {
                 <div className={showBurger ? 'screen' : ''} onClick={closeMenu}>
                 </div>
                 <div className={showBurger ? 'showBurger burgerContent' : 'hideBurger burgerContent'}>
-                        <Switch switchTheme={switchTheme} />
-                        {storeData.metric ?
-                            <div onClick={switchMetric} className='temperature celsius size-64 cover'></div>
-                            :
-                            <div onClick={switchMetric} className='temperature fahrenheit size-64 cover'></div>}
-                        <Link to='/favorites' onClick={closeMenu}><h2>My Favorites</h2></Link>
+                    <Switch switchTheme={switchTheme} />
+                    {storeData.metric ?
+                        <div onClick={switchMetric} className='temperature celsius size-64 cover'></div>
+                        :
+                        <div onClick={switchMetric} className='temperature fahrenheit size-64 cover'></div>}
+                    <Link to='/favorites' onClick={closeMenu}><h2>My Favorites</h2></Link>
                 </div>
-
             </div>
-
         </div>
     );
 }

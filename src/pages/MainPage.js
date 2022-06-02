@@ -4,25 +4,28 @@ import CurrentCity from '../cmps/CurrentCity';
 import Forecast from '../cmps/Forecast';
 import FavoriteButton from '../cmps/FavoriteButton';
 import { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import weatherService from '../services/weatherService'
 
 function MainPage() {
 
-    const dispatch = useDispatch()
     const storeData = useSelector(state => state)
 
     const [search, setSearch] = useState("")
+    const [open, setOpen] = useState(false)
+    const [cities, setCities] = useState([])
 
     const changeSearch = async e => {
-        dispatch({ type: "OPEN", payload: true })
+        setOpen(true)
         setSearch(e.target.value)
         const resp = await weatherService.getLocations(e.target.value)
-        dispatch({ type: "CITIES", payload: resp.data })
+        setCities(resp.data)
     }
 
-    const clearSearch = () => {
+    const clearSearch = async () => {
         setSearch("")
+        setOpen(false)
+    
     }
     return (
         <div className={storeData.theme ? 'bright' : 'dark'}>
@@ -30,11 +33,11 @@ function MainPage() {
             <div className='mainPage'>
                 <div style={{position:'relatvie', display:'inline-block'}}>
                     <input type='text' placeholder='search any city' value={search} onChange={changeSearch} />
-                    {storeData.open && <List clearSearch={clearSearch} />}
+                    {open && <List clearSearch={clearSearch} cities={cities}/>}
                 </div>
                 <FavoriteButton />
                 <CurrentCity />
-                <Forecast />
+                <Forecast/>
             </div>
         </div>
     );

@@ -1,15 +1,11 @@
 const reducer = (state = {
-  theme: true, open: true, metric: true, location: {},
-  city: {LocalizedName: "Tel Aviv", Key: '215854'}, cities: [], current: {}, forecast: [], favorites: []
+  theme: true, metric: true, city: {LocalizedName: "Tel Aviv", Key: '215854'}, cities: [], forecast: [], 
 }, action) => {
 
   switch (action.type) {
 
     case "THEME":
       return { ...state, theme: action.payload };
-
-    case "OPEN":
-      return { ...state, open: action.payload };
 
     case "METRIC":
       return { ...state, metric: action.payload };

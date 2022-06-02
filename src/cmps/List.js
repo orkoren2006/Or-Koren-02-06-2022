@@ -1,22 +1,20 @@
 import { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import weatherService from '../services/weatherService'
 
 
-function List({clearSearch}) {
+function List({clearSearch, cities}) {
 
     const dispatch = useDispatch()
-    const storeData = useSelector(state => state)
 
-    const [cities, setCities] = useState([])
+    const [passedCities, setPassedCities] = useState([])
 
     useEffect(() => {
-        setCities(storeData.cities)
-    }, [storeData])
+        setPassedCities(cities)
+    }, [cities])
 
     const getCity = async city => {
         clearSearch();
-        dispatch({type: "OPEN", payload: false})
         dispatch({type: "CITY", payload: city})
         const respForecast = await weatherService.getForecast(city.Key)
         dispatch({type: "FORECAST", payload: respForecast.data.DailyForecasts})
@@ -24,8 +22,8 @@ function List({clearSearch}) {
 
     return (
         <div>
-            {(cities.length > 0) && <div className='cityList'>
-                {cities.map(city => {
+            {(passedCities.length > 0) && <div className='cityList'>
+                {passedCities.map(city => {
                     return <div className='listLocation' key={city.Key} onClick={() => getCity(city)}><div className='flex center between'>{city.LocalizedName} <span style={{fontSize:'10px'}}>{city.Country.LocalizedName}</span></div></div>
                 })}
             </div>
