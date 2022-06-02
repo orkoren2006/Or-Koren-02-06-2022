@@ -15,7 +15,6 @@ function Forecast() {
         setForecast(storeData.forecast)
     }, [storeData])
 
-
     const getDefaultState = async () => {
         const resp = await weatherService.getForecast(storeData.city.Key)
         setForecast(resp.data.DailyForecasts)
